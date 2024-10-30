@@ -1,0 +1,46 @@
+<script>
+
+    // declarando as variáveis
+
+var valorA, valorB, resultado;
+
+// atribuindo (valorA recebe o número....)
+
+valorA = Number(prompt("Digite o primeiro número inteiro : "));
+valorB = Number(prompt("Digite o segundo número inteiro : "));
+
+// if usa para o SE
+// condições do If sempre entre parentêses 
+
+// usar um { } pois dentro da condição terá uma lógica de código e será um bloco de código 
+
+if  (valorA > valorB){
+
+    resultado = valorA - valorB;
+
+    // Interpolacão - é uma forma de montagem de string (texto) onde podemos concatenar (juntar) várias variáveis de uma só vez
+    // usando a crase (``) e utilizando ${variavel}
+
+    document.write (`O valor A (${valorA}) é maior que o valor B (${valorB}) e a diferença entre eles é: ${resultado}`);
+} else if (valorA < valorB){
+    
+   // utiliza-se o ELSE IF caso você tenha mais de dois cenários possíveis (ex: SE e SE)
+
+    resultado = valorB - valorA;
+
+    document.write (`O valor B (${valorB}) é maior que o valor A (${valorA}) e a diferença entre eles é: ${resultado}`);
+     
+} else {
+
+    // utiliza-se só o ELSE quando for o último cenário possível (ex: SENÃO)
+
+    resultado = valorA - valorB;
+
+    document.write (`O valor A (${valorA}) é igual ao valor B (${valorB}) e a diferença entre eles é: ${resultado}`);
+
+}
+
+// command + S (para salvar sempre no MAC)
+
+
+</script>
